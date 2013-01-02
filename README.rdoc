@@ -1,0 +1,6 @@
+== Overview
+This is my ruby code, I'm writing it as I learn
+
+== Ninja Game
+Build ninja's and have them fight eachother millions of times
+
