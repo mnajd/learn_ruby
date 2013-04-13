@@ -1,5 +1,5 @@
 == Overview
-This is John Jenson's ruby code.  His uncle is so nice to teach him. :)
+This is Melissa & John's ruby code.  Don Najd is so nice to teach them. :)
 
 == Ninja Game
 Build ninja's and have them fight eachother millions of times
@@ -7,12 +7,12 @@ Build ninja's and have them fight eachother millions of times
      ruby run_ninja.rb
 
 == Dice
-Roll the dice
+Roll the dice example
 
      ruby lib/dice/dice.rb
 
 == Choose Your Own Adventure
-Two adventures John wrote
+John's choose your own adventure game
 
      ruby lib/choose_adventure/menu.rb
 
