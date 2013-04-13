@@ -1,0 +1,11 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    load_runner (1.0.0)
+
+PLATFORMS
+  java
+  ruby
+
+DEPENDENCIES
+  load_runner (~> 1.0.0)

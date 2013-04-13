@@ -1,3 +1,5 @@
+require 'load_runner'
+
 ###########################
 # Describes Weapons
 ##########################

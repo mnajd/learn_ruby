@@ -44,7 +44,8 @@ class Game
       end
 
     end
-    puts "Opponent killed on round: #{round_count}"
+    #puts ""
+    #puts "Opponent killed on round: #{round_count}"
 
   end
 end
