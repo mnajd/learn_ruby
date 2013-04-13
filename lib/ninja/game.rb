@@ -1,6 +1,6 @@
 require_relative "ninja"
-require_relative "hands"
-require_relative "boulder"
+require_relative "weapons/hands"
+require_relative "weapons/boulder"
 
 class Game
 
@@ -44,7 +44,7 @@ class Game
       end
 
     end
-    #puts "Opponent dead on round: #{round_count}"
+    puts "Opponent killed on round: #{round_count}"
 
   end
 end

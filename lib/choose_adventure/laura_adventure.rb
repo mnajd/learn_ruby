@@ -2,7 +2,7 @@ class Game
 	def play
 		# laura's adventure
 
-		# initiateing
+		# init
 		puts 'hello welcome to LAURAS ADVENTURE!!!!!'
 
 		#your first decision

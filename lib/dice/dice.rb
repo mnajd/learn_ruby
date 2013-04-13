@@ -9,6 +9,9 @@ class Dice
 end
 
 
+
+puts 'We will roll the dice until we roll the number 6.'
+
 # create the dice
 d = Dice.new
 
