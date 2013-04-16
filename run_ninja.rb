@@ -11,7 +11,7 @@ while true
 
   # until n1 wins
   if g.n1_win_count > 0
-    puts 'WHAT!'
+    puts 'ninja 1 won with his hands'
     break
   end
 end
