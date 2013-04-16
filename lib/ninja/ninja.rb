@@ -4,7 +4,7 @@ class Ninja
 
   def initialize(weapon)
     # check type
-    if not weapon.is_a? Weapon
+    unless weapon.is_a? Weapon
       raise TypeError.new("that's not a weapon")
     end
 
@@ -15,7 +15,7 @@ class Ninja
   def hit(other_ninja)
 
     # check type
-    if not other_ninja.is_a? Ninja
+    unless other_ninja.is_a? Ninja
       raise TypeError.new("that's not a ninja")
     end
 
