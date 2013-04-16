@@ -4,7 +4,7 @@ class Ninja
 
   def initialize(weapon)
     # check type
-    if weapon.to_s != "weapon"
+    if weapon.class.superclass != Weapon
       raise TypeError.new("that's not a weapon")
     end
 
