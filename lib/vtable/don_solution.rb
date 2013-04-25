@@ -11,17 +11,14 @@ num_rows = (data.length + num_cols - 1) / num_cols;
 0.upto(num_rows-1) do  | current_row | 
 
 	# for each col
-    0.upto(num_cols - 1) do | current_col |  
+	0.upto(num_cols - 1) do | current_col |  
 
-    	# calculate index
+		# calculate index
 		index = (current_col * num_rows) + current_row
 
 		# add to row
 		print data[index].to_s.rjust(10)  
 
-    end
-    puts "\n"
+	end
+	puts "\n"
 end
-
-# footer
-2.times { puts ''}
