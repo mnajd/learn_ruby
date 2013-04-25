@@ -1,38 +1,27 @@
-#######################
-# Vert Table format
 puts 'VTable format'
 
-# algorithm: (current_col * number_rows) + current_row
-def vtable(data, number_cols)
+# data & desired columns
+data = (0...17).to_a
+num_cols = 3
 
-	# number of rows
-	number_rows = (data.length + number_cols - 1) / number_cols;   
+# calculate rows
+num_rows = (data.length + num_cols - 1) / num_cols;   
 
-	# zero based row iter
-	0.upto(number_rows-1) do  | current_row | 
+# for each row
+0.upto(num_rows-1) do  | current_row | 
 
-		# populate row
-		row = []
+	# for each col
+    0.upto(num_cols - 1) do | current_col |  
 
-		# zero based col iter
-	    0.upto(number_cols - 1) do | current_col |  
+    	# calculate index
+		index = (current_col * num_rows) + current_row
 
-	    	# calculate index
-			index = (current_col * number_rows) + current_row
+		# add to row
+		print data[index].to_s.rjust(10)  
 
-			# add to row
-			if index < data.length 
-	        	row << data[index].to_s.rjust(10)  
-	        end
-	    end
-
-	    # puts row
-	    puts row.join
-	end
+    end
+    puts "\n"
 end
 
-# run
-vtable((0...15).to_a, 5)
-
-
+# footer
 2.times { puts ''}
