@@ -7,8 +7,8 @@ class Array
     # calculate rows
     rows = (self.length.to_f / cols).ceil
     
-    # map results
-    self.each_with_index do |index| 
+    # iterate
+    0.upto(self.length) do |index| 
 
       # integer math; solve for x and y
       x = (index % cols)
