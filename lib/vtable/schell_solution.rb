@@ -2,39 +2,27 @@ puts 'VTable format'
  
 class Array
 
-  def create_vtable(cols)
+  def print_vtable(cols)
 
     # calculate rows
     rows = (self.length.to_f / cols).ceil
     
     # map results
-    self.map { |index| 
+    self.each_with_index do |index| 
 
       # integer math; solve for x and y
       x = (index % cols)
       y = (index / cols)
 
       # solve for index
-      self[x * rows + y]
-    }
+      print self[x * rows + y].to_s.rjust(10)
+      print "\n" if x==cols-1
+     
+    end
   end
 end
  
 # print_vtable on array
-cols = 3
-a = (0...17).to_a.create_vtable(cols)
+(0...17).to_a.print_vtable(3)
 
-print a.inspect
-
-3.times {puts ''}
-# print it
-a.each_with_index do |val, i|
-  
-  # print the value
-  print val.to_s.rjust(10)
-  
-  # end the row
-  if cols % i
-    print "\n"
-  end
-end
+2.times { puts '' }
