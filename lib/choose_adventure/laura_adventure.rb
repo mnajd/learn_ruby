@@ -1,4 +1,4 @@
-class Game
+-class Game
 	def play
 		# laura's adventure
 
